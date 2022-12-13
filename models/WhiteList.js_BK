@@ -1,0 +1,26 @@
+const mongoose = require('mongoose');
+
+const PostsSchemaWhitelist = mongoose.Schema({
+        client_id: {
+                type: String,
+                required: true
+        },
+        camera_id: {
+                type: String,
+                required: true
+        },
+        camera_id: {
+                type: Intl,
+                require: true
+        },
+        cameraId: {
+                type: String,
+                require: true
+        },
+        date: {
+                type: Date,
+                default: Date.now
+        }
+});
+
+module.exports = mongoose.model('WhiteList', PostsSchemaWhitelist);
